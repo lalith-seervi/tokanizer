@@ -22,3 +22,7 @@ def api_tokenize():
 @app.route("/")
 def index():
     return render_template("index.html")
+
+
+def handler(request, context):
+    return serve(app, request, context)
