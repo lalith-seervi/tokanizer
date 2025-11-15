@@ -106,7 +106,7 @@ class TeluguSplitter:
 class TokenizerEngine:
     def __init__(self):
         self.splitter = TeluguSplitter(
-            corpus_path="./tel_corpus1_with_freqs.txt",
+            corpus_path="./vocab.txt",
             corpus1_path="./word_counts_corpus1.txt"
         )
 
