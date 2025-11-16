@@ -30,7 +30,8 @@
 
 
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify
+from tokenizer import run_tokenizer
 
 app = Flask(__name__)
 
