@@ -37,7 +37,7 @@ async function sendText() {
         div.innerHTML = `
   <strong>${item.token}</strong> →
   ${
-    item.status === "status"
+    item.status === "split_found"
       ? `<span>${item.first_token}</span> + <span>${item.second_token}</span>`
       : `<span>${item.token}</span>`
   }
