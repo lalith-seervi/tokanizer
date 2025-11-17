@@ -19,8 +19,8 @@ def api_tokenize():
             out.append({
                 "token": r["word"],
                 "status": r["status"],
-                "first_token": r["first_split"]["left"],
-                "second_token": r["first_split"]["right"],
+                "first_token": r["best_split"]["left"],
+                "second_token": r["best_split"]["right"],
             })
         else:
             out.append({
