@@ -530,4 +530,5 @@ def run_tokenizer(words_list, corpus_path="./vocab.txt", corpus1_path="./word_co
         # process word using existing logic
         result = get_split_for_word(word, corpus_path, corpus1_path)
         results.append(result)
+    print(result)
     return results
