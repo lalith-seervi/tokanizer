@@ -33,15 +33,7 @@ async function sendText() {
         let div = document.createElement("div");
         div.classList.add("token-box");
         div.style.animationDelay = delay + "ms";
-        // div.innerHTML = `<strong>${item.token}</strong> → <span>${item.first_token}</span> + <span>${item.second_token}</span>`;
-        div.innerHTML = `
-  <strong>${item.token}</strong> →
-  ${
-    item.status === "Valid split"
-      ? `<span>${item.first_token}</span> + <span>${item.second_token}</span>`
-      : `<span>${item.token}</span>`
-  }
-`;
+        div.innerHTML = `<strong>${item.token}</strong> →${item.status === "Valid split" ? `<span>${item.first_token}</span> + <span>${item.second_token}</span>` : `<span>${item.token}</span>`}`;
         delay += 120;
         tokenList.appendChild(div);
     }
