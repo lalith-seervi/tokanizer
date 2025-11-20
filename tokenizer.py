@@ -510,7 +510,7 @@ def get_split_for_word(word, corpus_path="./vocab.txt", corpus1_path="./word_cou
         "status": "Valid split",
         "best_split": {
             "left": L,
-            "right": R,
+            "right": "##" + R,
             "score": float(score)
         },
         "recursive_parts": final_parts
